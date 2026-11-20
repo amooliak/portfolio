@@ -33,14 +33,30 @@
     </p>
   </div>
 
-  <div class="library-tools">
-          <div class="library-tools">
-            <label class="search"><span class="sr-only">Search writing projects</span><input id="book-search" type="search" placeholder="search projects..." autocomplete="off" /></label>
-            <div class="filters" aria-label="Filter writing projects" id="filters"></div>
-          </div>
+  
+
           <p id="projects-title" class="sr-only">Writing bookshelf</p>
           <div class="book-grid" id="book-grid" role="list" aria-live="polite"></div>
           <p class="empty-state" id="empty-state" hidden>nothing here yet.</p>
+          <div class="library-tools">
+
+  <label class="search">
+    <span class="sr-only">Search writing projects</span>
+    <input
+      id="book-search"
+      type="search"
+      placeholder="search projects..."
+      autocomplete="off"
+    />
+  </label>
+
+  <div
+    class="filters"
+    aria-label="Filter writing projects"
+    id="filters"
+  ></div>
+
+</div>
         </section>
     </main>
     <script src="script.js"></script>
