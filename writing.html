@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Writing portfolio." />
+    <title>Writing · Portfolio Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-view="bookshelf">
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="Portfolio archive home">A / A</a>
+      <nav aria-label="Primary navigation">
+  <a href="writing.html">Writing</a>
+  <a href="design.html" aria-current="page">Design</a>
+   <a href="about.html">About</a>
+</nav>
+    </header>
+    <main>
+      <section class="archive" aria-labelledby="projects-title">
+       
+          <section class="library" aria-labelledby="projects-title">
+
+  <div class="archive-intro">
+    <p class="eyebrow">01 / WRITING SHELF</p>
+    <h1>Writing, <em>in many forms.</em></h1>
+    <p class="intro-copy">
+      Essays, fiction, poetry, and explorations of the things that hold my attention.
+      A collection of ideas, observations, and stories, gathered here.
+    </p>
+  </div>
+
+  <div class="library-tools">
+          <div class="library-tools">
+            <label class="search"><span class="sr-only">Search writing projects</span><input id="book-search" type="search" placeholder="search projects..." autocomplete="off" /></label>
+            <div class="filters" aria-label="Filter writing projects" id="filters"></div>
+          </div>
+          <p id="projects-title" class="sr-only">Writing bookshelf</p>
+          <div class="book-grid" id="book-grid" role="list" aria-live="polite"></div>
+          <p class="empty-state" id="empty-state" hidden>nothing here yet.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

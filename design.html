@@ -1,0 +1,223 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Design portfolio." />
+  <title>Design · Portfolio Archive</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-view="design">
+
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Portfolio archive home">A / A</a>
+    <nav aria-label="Primary navigation">
+  <a href="writing.html">Writing</a>
+  <a href="design.html" aria-current="page">Design</a>
+   <a href="about.html">About</a>
+</nav>
+  </header>
+
+  <main>
+    <section class="design-archive" aria-labelledby="design-title">
+
+      <div class="design-heading">
+        <p class="eyebrow">02 / Design archive</p>
+        <h1 id="design-title">Design <em>index</em></h1>
+        
+      </div>
+      <div class="design-heading"><p>Three ways of thinking, making, and communicating.</p></div>
+
+      
+<div class="design-frame-grid">
+
+  <!-- 01 / USER EXPERIENCE DESIGN -->
+
+  <article class="design-frame ux-frame">
+
+    <button
+      class="ux-light-switch"
+      id="uxLightSwitch"
+      type="button"
+      aria-label="Open User Experience Design portfolio"
+    >
+      <span class="ux-switch-track" aria-hidden="true">
+        <span class="ux-switch-knob"></span>
+      </span>
+
+    
+    </button>
+
+    <div class="design-frame-meta">
+      <h2>User Experience Design</h2>
+    </div>
+
+  </article>
+
+
+  <!-- 02 / GRAPHIC DESIGN -->
+
+  <article class="design-frame graphic-frame">
+
+    <button
+      class="graphic-interaction"
+      id="graphicInteraction"
+      type="button"
+      aria-label="Open Graphic Design portfolio"
+    >
+
+      <span class="graphic-specimen" aria-hidden="true">
+        <span class="graphic-letter graphic-letter-a">A</span>
+        <span class="graphic-letter graphic-letter-a-small">a</span>
+      </span>
+
+     
+
+    </button>
+
+    <div class="design-frame-meta">
+      <h2>Visual Design</h2>
+    </div>
+
+  </article>
+
+
+  <!-- 03 / ILLUSTRATION -->
+
+  <article class="design-frame illustration-frame">
+
+    <button
+      class="illustration-interaction"
+      id="illustrationInteraction"
+      type="button"
+      aria-label="Open Illustration portfolio"
+    >
+
+      <span class="illustration-drawing" aria-hidden="true">
+
+        <svg
+          viewBox="0 0 320 180"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="illustration-squiggle"
+            pathLength="1"
+            d="M25 112 C50 12 95 25 112 88 S155 155 174 87 S230 14 248 78 S280 140 300 45"
+          />
+        </svg>
+
+      </span>
+
+     
+
+    </button>
+
+    <div class="design-frame-meta">
+      <h2>Experiential Art</h2>
+    </div>
+
+  </article>
+
+</div>
+
+
+    </section>
+  </main>
+
+
+<script>
+  // =====================================
+  // 01 — USER EXPERIENCE DESIGN
+  // LIGHT SWITCH
+  // =====================================
+
+  const uxSwitch = document.getElementById("uxLightSwitch");
+
+  if (uxSwitch) {
+    uxSwitch.addEventListener("click", function () {
+
+      document.body.classList.add("ux-is-on");
+
+      uxSwitch.setAttribute(
+        "aria-label",
+        "Opening User Experience Design portfolio"
+      );
+
+      uxSwitch.disabled = true;
+
+      setTimeout(function () {
+        window.location.href = "user.experience.html";
+      }, 750);
+
+    });
+  }
+
+
+  // =====================================
+  // 02 — GRAPHIC DESIGN
+  // TYPOGRAPHY INTERACTION
+  // =====================================
+
+  const graphicButton = document.getElementById("graphicInteraction");
+
+  if (graphicButton) {
+    graphicButton.addEventListener("click", function () {
+
+      graphicButton.classList.add("is-activating");
+
+      graphicButton.setAttribute(
+        "aria-label",
+        "Opening Graphic Design portfolio"
+      );
+
+      graphicButton.disabled = true;
+
+      setTimeout(function () {
+        window.location.href = "graphic-design.html";
+      }, 750);
+
+    });
+  }
+
+
+  // =====================================
+  // 03 — ILLUSTRATION
+  // DRAWING INTERACTION
+  // =====================================
+
+  const illustrationButton = document.getElementById("illustrationInteraction");
+
+  if (illustrationButton) {
+    illustrationButton.addEventListener("click", function () {
+
+      illustrationButton.classList.add("is-activating");
+
+      illustrationButton.setAttribute(
+        "aria-label",
+        "Opening Illustration portfolio"
+      );
+
+      illustrationButton.disabled = true;
+
+      setTimeout(function () {
+        window.location.href = "illustration.html";
+      }, 750);
+
+    });
+  }
+
+</script>
+<footer class="site-footer">
+  <span>© AMOOLIA KODUKULLA</span>
+  <span>MADE WITH INTENTION</span>
+</footer>
+
+</body>
+</html>
